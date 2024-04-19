@@ -55,7 +55,9 @@ h1 {
   font-weight: 400;
   line-height: 38px;
   color: #FFFFFF;
-  margin: 0 0 30px 0;
+  width: 525px;
+  text-align: center;
+  margin: 0 auto 30px;
 }
 
 p {
@@ -69,6 +71,11 @@ a {
   color: #FFFFFF;
 }
 
+.container_text {
+  width: 708px;
+  margin: 0 auto;
+}
+
 .text {
   font-size: 16px;
   line-height: 30px;
@@ -78,11 +85,21 @@ a {
   font-size: 14px;
   line-height: 16.41px;
   color: rgba(255, 255, 255, 0.6);
-  margin: 0 0 14px 0;
+  width: 180px;
+  margin: 0 auto 14px;
+  text-align: center;
 }
 
 .author_information {
-  margin: 0 0 28px 0;
+  width: 214px;
+  margin: 0 auto 28px;
+}
+
+.author_photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .author {
@@ -96,15 +113,27 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.container_picture {
+  width: 896px;
+  height: 594px;
+  margin: 0 auto 69px;
+}
+
 .main_picture {
-  margin: 0 0 69px 0;
+  width: 896px;
+  height: 594px;
+}
+
+footer {
+  width: 226px;
+  margin: 103px auto 77px;
 }
 
 .footer {
   font-size: 16px;
   line-height: 28px;
   color: rgba(255, 255, 255, 0.6);
-  margin: 103px 0 77px 0;
+  text-align: center;
 }
 
 
