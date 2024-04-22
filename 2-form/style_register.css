@@ -1,16 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background: rgba(243, 148, 148, 1);
+  background: linear-gradient(225deg, #fdc5c5 25.45%, rgba(242, 152, 222, 0) 100%),
+  linear-gradient(225deg, #ffa5a5 33.09%, rgba(255, 255, 255, 0) 82.34%), #f39494;
   font-family: 'Open-Sans', sans-serif;
+  font-size: 18px;
   margin: 0;
 }
 
 form {
   background-color: #FFFEFE;
-  width: 394px;
-  height: 410px;
+  max-width: 582px;
+  max-height: 573px;
   margin: 225px auto 226px;
   padding: 72px 95px 91px 93px;
   border-radius: 10px;
+}
+
+h1, p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 h1 {
@@ -18,95 +30,74 @@ h1 {
   font-weight: 700;
   line-height: 49.03px;
   color: #333333;
-  width: 383px;
-  margin: 0 auto;
-  text-align: center;
 }
 
 p {
-  font-size: 18px;
   font-weight: 400;
   line-height: 24.51px;
   color: #666666;
-  width: 237px;
-  margin: 0 auto 47px;
-  text-align: center;
+  margin-bottom: 47px;
 }
 
 a {
   color: #089FE0;
 }
 
-input {
+input:not(input[type="checkbox"]) {
+  color: #999;
+  background-color: #f5f5f5;
   font-size: 16px;
   font-style: italic;
   font-weight: 400;
-  line-height: 21.79px;
-  background-color: #FFFFFF;
-  color: #333333;
+  border-radius: 5px;
+  width: 100%;
+  height: 44px;
+  line-height: 26px;
+  border: 1px solid #f5f5f5;
+  padding: 9px 35px 9px 11px;
+}
+
+input:not(input[type="checkbox"]):focus {
+  background-color: #fff;
+  color: #333;
+  font-style: normal;
+  font-weight: 600;
+  outline: none;
 }
 
 button {
-  font-size: 18px;
-  font-weight: 400;
   line-height: 24.51px;
   background-color: #089FE0;
-  color: #FFFFFF;
-  width: 394px;
   height: 44px;
-  border: 3px solid #FFFFFF;
+  padding: 9px 12px;
+  width: 100%;
+  border: 0;
   border-radius: 5px;
-  padding: 9px 102px;
+  font-size: 18px;
+  color: #fff;
   margin-bottom: 22px;
 }
 
 label {
   font-size: 14px;
-  font-weight: 400;
   line-height: 19.07px;
   color: #666666;
 }
 
 .username {
-  width: 370.4px;
-  height: 24.4px;
-  border: 1px solid rgba(245, 245, 245, 1);
-  border-radius: 5px;
-  padding: 9px 11px 9px 11px;
   margin-bottom: 21px;
-}
-
-.username:focus, .name:focus, .lastname:focus, .email:focus {
-  outline: none;
 }
 
 .container_name, .email {
   margin-bottom: 22px;
 }
 
-.name, .lastname, .email {
-  background-color: #F5F5F5;
-  height: 26px;
-  border: none;
-  padding: 9px 11px 9px 11px;
+.container_name input:first-child {
+  border-radius: 5px 0 0 5px;
 }
 
-.name {
-  width: 175.2px;
-  border-right: 1px solid #FFFFFF;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
-.lastname {
-  width: 174px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.email {
-  width: 372px;
-  border-radius: 5px;
+.container_name input:last-child {
+  border-radius: 0 5px 5px 0;
 }
 
 .terms_of_use {

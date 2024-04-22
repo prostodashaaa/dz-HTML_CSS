@@ -72,7 +72,7 @@ a {
 }
 
 .container_text {
-  width: 708px;
+  max-width: 708px;
   margin: 0 auto;
 }
 
@@ -114,14 +114,15 @@ a {
 }
 
 .container_picture {
-  width: 896px;
-  height: 594px;
+  max-width: 896px;
+  max-height: 594px;
   margin: 0 auto 69px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-.main_picture {
-  width: 896px;
-  height: 594px;
+.container_picture img {
+  width: 100%;
 }
 
 footer {
