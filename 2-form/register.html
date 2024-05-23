@@ -1,34 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Kozyreva Darya" />
-  <meta name="keywords" content="Форма регистрации">
-  <link rel="stylesheet" href="style_register.css">
-  <title>Register</title>
-</head>
-<body>
-  <main>
-    <form action="#" method="get">
-      <h1>Регистрация</h1>
-      <p>Уже есть аккаунт? <a href="">Войти</a></p>
-      <div>
-        <input type="text" name="username" id="username" placeholder="Имя пользователя" class = 'username'\>
-      </div>
-      <div class = 'container_name'>
-        <input type="text" name="name" id="name" placeholder="Имя" class = 'name'\>
-        <input type="text" name="lastname" id="lastname" placeholder="Фамилия" class = 'lastname'\>
-      </div>
-      <div>
-        <input type="email" name="email" id="email" placeholder="E-mail" class = 'email'>
-      </div>
-      <button type="submit">Зарегистрироваться</button>
-      <div>
-        <input type="checkbox" name="conditions" id="conditions" class = 'terms_of_use'>
-        <label for="conditions">Я прочитал и принимаю <a href="#">Условия использования</a></label>
-      </div>
-    </form>
-  </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kozyreva Darya" />
+    <meta name="keywords" content="Форма регистрации" />
+    <link rel="stylesheet" href="style_register.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <main>
+      <form action="#" method="get">
+        <div>
+          <h1>Регистрация</h1>
+          <p>Уже есть аккаунт? <a href="">Войти</a></p>
+        </div>
+        <div class="field">
+          <div>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Имя пользователя"
+              class="username"
+              \
+            />
+          </div>
+          <div class="container_name">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Имя"
+              class="name"
+              \
+            />
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Фамилия"
+              class="lastname"
+              \
+            />
+          </div>
+          <div>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+              class="email"
+            />
+          </div>
+          <button type="submit">Зарегистрироваться</button>
+          <div>
+            <input
+              type="checkbox"
+              name="conditions"
+              id="conditions"
+              class="terms_of_use"
+            />
+            <label for="conditions"
+              >Я прочитал и принимаю
+              <a href="#">Условия использования</a></label
+            >
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
 </html>
