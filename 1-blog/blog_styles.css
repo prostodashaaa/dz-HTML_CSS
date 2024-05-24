@@ -182,9 +182,12 @@ footer {
 .container_text {
   max-width: 708px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-.text {
+.container_text p:not(p:first-child) {
   font-size: 16px;
   line-height: 30px;
 }

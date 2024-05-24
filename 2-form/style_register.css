@@ -79,6 +79,32 @@ input:not(input[type="checkbox"]):focus {
   outline: none;
 }
 
+input[type="checkbox"] {
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked + label[for="conditions"]::before {
+  background-color: #089fe0;
+  content: "✓";
+  max-height: 15.6px;
+  padding: 0 3px;
+  color: white;
+}
+
+label[for="conditions"]::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  margin: 2px;
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid #eeeeee;
+  background-color: #f5f5f5;
+  font-size: 11px;
+}
+
 button {
   line-height: 24.51px;
   background-color: #089fe0;
@@ -89,12 +115,22 @@ button {
   border-radius: 5px;
   font-size: 18px;
   color: #fff;
+  position: relative;
+}
+
+button img {
+  position: absolute;
+  right: 24px;
 }
 
 label {
   font-size: 14px;
   line-height: 19.07px;
   color: #666666;
+}
+
+.checkbox {
+  position: relative;
 }
 
 .field {
@@ -114,9 +150,4 @@ label {
 
 .container_name input:last-child {
   border-radius: 0 5px 5px 0;
-}
-
-.terms_of_use {
-  width: 15px;
-  height: 16px;
 }
